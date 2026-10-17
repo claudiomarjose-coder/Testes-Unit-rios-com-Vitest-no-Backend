@@ -1,0 +1,29 @@
+{
+  "name": "testesunitarios_node_vitest",
+  "version": "1.0.0",
+  "description": "API Node.js com Express, Prisma e PostgreSQL em Docker, com testes automatizados (Vitest e Supertest)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": ["node", "express", "prisma", "postgresql", "docker", "vitest"],
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "express": "^4.21.2",
+    "prisma": "^5.22.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.9",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.9"
+  }
+}
